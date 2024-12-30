@@ -1,9 +1,11 @@
+/* Reset de margens e padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos globais */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -40,6 +42,7 @@ nav ul li a {
     font-size: 18px;
 }
 
+/* Seções */
 section {
     padding: 40px;
     margin: 20px 0;
@@ -50,6 +53,7 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Estilos para as habilidades */
 .skills-list {
     display: flex;
     justify-content: space-around;
@@ -64,6 +68,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para os projetos */
 .project {
     background-color: #fff;
     padding: 20px;
@@ -72,6 +77,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para os testemunhos */
 .testimonial {
     background-color: #fff;
     padding: 20px;
@@ -80,6 +86,7 @@ h2 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* Estilos para o formulário */
 form input, form textarea {
     width: 100%;
     padding: 10px;
@@ -97,6 +104,7 @@ form button {
     border-radius: 5px;
 }
 
+/* Estilo para o rodapé */
 footer {
     text-align: center;
     padding: 20px;
@@ -104,7 +112,7 @@ footer {
     color: white;
 }
 
-.social-links a {
+footer .social-links a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
@@ -112,4 +120,35 @@ footer {
 
 footer .social-links a:hover {
     text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .skills-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .project, .testimonial {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    header .logo h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
 }
